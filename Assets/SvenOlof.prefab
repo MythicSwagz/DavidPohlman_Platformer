@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 61383359749950930}
   - component: {fileID: 50330520749784930}
   - component: {fileID: 114515591869475984}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SvenOlof
   m_TagString: Player
   m_Icon: {fileID: 0}
