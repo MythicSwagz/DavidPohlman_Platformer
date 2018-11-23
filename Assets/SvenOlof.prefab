@@ -57,6 +57,7 @@ GameObject:
   - component: {fileID: 4806097896159430}
   - component: {fileID: 20144497197032014}
   - component: {fileID: 81168782294114698}
+  - component: {fileID: 114916989860803672}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -248,6 +249,18 @@ MonoBehaviour:
   moveSpeed: 6
   jumpSpeed: 12
   groundCheck: {fileID: 114330476943560858}
+--- !u!114 &114916989860803672
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1776862134956210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 732e8881855408548854857a237d940f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 0
 --- !u!212 &212144101751476004
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -280,8 +293,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -627913535
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300054, guid: 8605eff7171ca8544bdad9772d8e8bcf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
