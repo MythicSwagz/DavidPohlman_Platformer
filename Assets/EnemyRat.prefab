@@ -140,6 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 761ca11cc6c35f34993166e98e902af1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minimumScoreNeeded: 0
   sceneToLoad: SampleScene
 --- !u!212 &212786040211422284
 SpriteRenderer:

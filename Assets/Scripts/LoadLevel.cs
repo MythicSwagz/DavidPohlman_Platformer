@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LoadLevel : MonoBehaviour
 {
-    public int minimumScoreNeeded = 5;
+    public int minimumScoreNeeded = 4;
     public string sceneToLoad = "SampleScene";
 
     private void OnTriggerEnter2D(Collider2D collision)
