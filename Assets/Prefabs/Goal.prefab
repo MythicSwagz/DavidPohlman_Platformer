@@ -78,7 +78,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 761ca11cc6c35f34993166e98e902af1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: SampleScene
+  minimumScoreNeeded: 4
+  sceneToLoad: CongratsScene
 --- !u!212 &212878821761926856
 SpriteRenderer:
   m_ObjectHideFlags: 1
