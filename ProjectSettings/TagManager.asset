@@ -16,10 +16,10 @@ TagManager:
   - UI
   - 
   - 
+  - Backgrounds
   - EnemyTriggers
   - Player
   - Ground
-  - 
   - 
   - 
   - 
@@ -55,4 +55,7 @@ TagManager:
     locked: 0
   - name: EditorHelpers
     uniqueID: 2190358191
+    locked: 0
+  - name: Backgrounds
+    uniqueID: 1679158161
     locked: 0
