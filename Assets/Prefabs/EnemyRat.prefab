@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minimumScoreNeeded: 0
-  sceneToLoad: GameOverScene
+  sceneToLoad: GameOverSceneLevelOne
 --- !u!212 &212786040211422284
 SpriteRenderer:
   m_ObjectHideFlags: 1

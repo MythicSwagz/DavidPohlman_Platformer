@@ -24,6 +24,6 @@ public class ScoreText : MonoBehaviour
         //Denna kod säger att texten ska vara en text. Det blir en string.Format alltså något som skrivs.
         //Det som står i parantesen ska vara det som skrivs ut på skärmen. I detta fall Score: Antalet coins du har/4.
         //Coin.Score kollar hur mycket du har.
-        text.text = string.Format("Score: {0:0}/4", Coin.score);
+        text.text = string.Format("Coins: {0:0}/4", Coin.score);
     }
 }
