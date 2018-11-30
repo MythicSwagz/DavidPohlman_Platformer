@@ -5,7 +5,7 @@ using UnityEngine;
 public class GroundChecker : MonoBehaviour
 {
     //Här gör jag en bool som kollar om jag är på marken eller inte.
-    public bool isGrounded;
+    public int isGrounded;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -13,7 +13,7 @@ public class GroundChecker : MonoBehaviour
         if (collision.tag == "Ground")
         {
             //Om jag nuddar marken så är "isGrounded" true eller sant.
-            isGrounded = true;
+            isGrounded++;
         }
             
     }
@@ -24,7 +24,7 @@ public class GroundChecker : MonoBehaviour
         if (collision.tag == "Ground")
         {
             //När jag lämnar "Ground" så är "isGrounded" false eller falskt.
-            isGrounded = false;
+            isGrounded--;
         }
             
     }

@@ -15,10 +15,30 @@ public class PlayerMovement : MonoBehaviour
     //Här döper jag en RigidBody2D till rbody.
     private Rigidbody2D rbody;
 
+    public SpriteRenderer SR;
+
+
+
+    public Sprite pink;
+    public Sprite green;
+    public Sprite yellow;
     // Use this for initialization
     void Start()
     {
         rbody = GetComponent<Rigidbody2D>();
+        SR = GetComponent<SpriteRenderer>();
+        if (CharacterSelection.selectedPlayer == 1)
+        {
+            SR.sprite = pink;
+        }
+        if (CharacterSelection.selectedPlayer == 2)
+        {
+            SR.sprite = green;
+        }
+        if (CharacterSelection.selectedPlayer == 3)
+        {
+            SR.sprite = yellow;
+        }
     }
 
     // Update is called once per frame
@@ -33,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             //Detta stycke av kod kollar om "Player" är på marken. Om "Player" är på marken så kan den hoppa.
-            if (groundCheck.isGrounded == true)
+            if (groundCheck.isGrounded > 0)
             {
                 //Dessa rader utav kod bestämmer hur snabbt jag hoppar.
                 rbody.velocity = new Vector2(
