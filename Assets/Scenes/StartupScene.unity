@@ -501,7 +501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minimumScoreNeeded: 0
-  sceneToLoad: LevelOne
+  sceneToLoad: Tutorial
 --- !u!1 &1063130231
 GameObject:
   m_ObjectHideFlags: 0
