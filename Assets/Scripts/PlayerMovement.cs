@@ -15,26 +15,32 @@ public class PlayerMovement : MonoBehaviour
     //Här döper jag en RigidBody2D till rbody.
     private Rigidbody2D rbody;
 
+    //Här döper jag en SpriteRenderer till SR.
     public SpriteRenderer SR;
 
 
-
+    //Här döper jag 3 olika Sprites till olika färger.
     public Sprite pink;
     public Sprite green;
     public Sprite yellow;
     // Use this for initialization
     void Start()
     {
+        //Här hämtar jag gubbens SpriteRenderer.
         rbody = GetComponent<Rigidbody2D>();
+        //Här hämtar jag gubbens SpriteRenderer.
         SR = GetComponent<SpriteRenderer>();
+        //Här kollar jag om den valda spelare är 1, då ska den rosa bli vald.
         if (CharacterSelection.selectedPlayer == 1)
         {
             SR.sprite = pink;
         }
+        //Här kollar jag om den valda spelare är 2, då ska den gröna bli vald.
         if (CharacterSelection.selectedPlayer == 2)
         {
             SR.sprite = green;
         }
+        //Här kollar jag om den valda spelare är 3, då ska den gula bli vald.
         if (CharacterSelection.selectedPlayer == 3)
         {
             SR.sprite = yellow;

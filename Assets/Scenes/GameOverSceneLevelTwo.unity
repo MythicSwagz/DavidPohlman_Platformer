@@ -1930,6 +1930,10 @@ MonoBehaviour:
   moveSpeed: 6
   jumpSpeed: 12
   groundCheck: {fileID: 1433172072}
+  SR: {fileID: 0}
+  pink: {fileID: 21300076, guid: 8605eff7171ca8544bdad9772d8e8bcf, type: 3}
+  green: {fileID: 21300010, guid: 8605eff7171ca8544bdad9772d8e8bcf, type: 3}
+  yellow: {fileID: 21300098, guid: 8605eff7171ca8544bdad9772d8e8bcf, type: 3}
 --- !u!50 &2025295691
 Rigidbody2D:
   serializedVersion: 4
