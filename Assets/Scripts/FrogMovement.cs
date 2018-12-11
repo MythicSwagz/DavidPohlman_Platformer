@@ -52,7 +52,7 @@ public class FrogMovement : MonoBehaviour
             rbody.velocity = new Vector2(
             moveSpeed,
             rbody.velocity.y);
-            transform.localScale = new Vector3(1, 1, 1);
+            transform.localScale = new Vector3(-1, 1, 1);
         }
         else
         {
@@ -60,7 +60,7 @@ public class FrogMovement : MonoBehaviour
             rbody.velocity = new Vector2(
             -moveSpeed,
             rbody.velocity.y);
-            transform.localScale = new Vector3(-1, 1, 1);
+            transform.localScale = new Vector3(1, 1, 1);
         }
 
 
@@ -68,14 +68,12 @@ public class FrogMovement : MonoBehaviour
 
     }
 
-
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "InvisibleWall")
         {
             left = !left;
         }
-    }
 
+    }
 }
